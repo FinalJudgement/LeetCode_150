@@ -19,7 +19,7 @@ function binarySearch(arr, tar) {
     let middle = Math.floor(low + (high - low) / 2);
     let value = arr[middle];
 
-    console.log("middle: " + middle);
+    console.log("middle: " + value);
 
     if (value < tar) {
       low = middle + 1;
