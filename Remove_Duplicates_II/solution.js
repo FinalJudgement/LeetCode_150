@@ -27,3 +27,17 @@ var efficient = function (nums) {
   }
   return writePointer;
 };
+
+var efficientSqured = function (nums) {
+  if (nums.length <= 2) return nums.length;
+
+  let assignPtr = 2;
+
+  for (let currentPtr = 2; currentPtr < nums.length; i++) {
+    if (nums[currentPtr] !== nums[assignPtr]) {
+      nums[assignPtr] = nums[currentPtr];
+      assignPtr++;
+    }
+  }
+  return assignPtr;
+};
