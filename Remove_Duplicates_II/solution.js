@@ -10,7 +10,7 @@ var removeDuplicates = function (nums) {
     } else {
       hash[c]++;
     }
-    console.log(hash);
+    return nums.length;
   }
 };
 
