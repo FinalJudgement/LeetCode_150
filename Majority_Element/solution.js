@@ -54,10 +54,6 @@ var majorityElement = function (nums) {
   return candidate;
 };
 
-console.log(result);
-let array = [2, 2, 3, 1, 1];
-let result = minorityElement(array);
-
 function minorityElement(nums) {
   let candidate = nums[0];
   let count = 1;
